@@ -1,0 +1,13 @@
+jpush: 
+  team: 
+    appKey: ef261a0db2377cc178fa6e22
+    masterSecret: ae6ab8b7f7492e900584df65
+    groupPushKey: 
+    groupMasterSecret: 
+    apnsProduction: true
+  mem: 
+    appKey: 4d40e249b9b20f23f34b89b9
+    masterSecret: 3ff03ae0b2512f33c7d0bd7e
+    groupPushKey: 
+    groupMasterSecret: 
+    apnsProduction: true

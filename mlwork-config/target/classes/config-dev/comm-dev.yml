@@ -1,0 +1,23 @@
+sys: 
+  orderpre: NJ
+amap: 
+  geoKey : 58bc52556373dd903c6651fe69083306 # 高德geokey
+  
+# feign 配置
+feign: 
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 60000
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+
+#请求处理的超时时间
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 10000
+  

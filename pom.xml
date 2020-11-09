@@ -1,0 +1,359 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mlwork.parent</groupId>
+  <artifactId>mlwork-parent</artifactId>
+  <version>1.0.0</version>
+  <name>mlwork :: parent</name>
+  <packaging>pom</packaging>
+  
+  
+   <modules>
+		<module>mlwork-eureka</module>
+		<module>mlwork-config</module>
+		<module>mlwork-commom</module>
+		<module>mlwork-datasource</module>
+   </modules>
+  
+  <properties>
+		<!-- Common Properties -->
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<java.version>1.8</java.version>
+
+		<!-- Utils Properties -->
+		<fastjson.version>1.2.51</fastjson.version>
+		<net.sf.json-lib.version>2.4</net.sf.json-lib.version>
+		<commons-fileupload.version>1.3.3</commons-fileupload.version>
+		<commons-io.version>2.6</commons-io.version>
+		<commons-beanutils.version>1.9.3</commons-beanutils.version>
+
+		<org.apache.poi.version>3.17</org.apache.poi.version>
+		<javax.servlet-api.verdion>4.0.1</javax.servlet-api.verdion>
+		<com.sun.xml.bind.jaxb-impl.version>2.3.2</com.sun.xml.bind.jaxb-impl.version>
+		<org.javassist.javassist.version>3.25.0-GA</org.javassist.javassist.version>
+
+		<mybatis-spring-boot.version>1.3.2</mybatis-spring-boot.version>
+		<tk-mybatis-mapper.version>4.0.4</tk-mybatis-mapper.version>
+		<mybatis-generator-core.version>1.3.7</mybatis-generator-core.version>
+		<mapper-spring-boot.version>2.0.4</mapper-spring-boot.version>
+		<pagehelper-spring-boot.version>1.2.12</pagehelper-spring-boot.version>
+
+		<!-- google qrcode -->
+		<google.zxing.version>3.3.3</google.zxing.version>
+
+		<shiro.version>1.4.1</shiro.version>
+		<github-axet-kaptcha.version>0.0.9</github-axet-kaptcha.version>
+		<com-auth0-jwt.version>3.2.0</com-auth0-jwt.version>
+
+		<!-- swagger -->
+		<io-springfox-swagger.version>2.9.2</io-springfox-swagger.version>
+		<com-google-guava.version>27.0-jre</com-google-guava.version>
+		<org-apdplat-word.version>1.3.1</org-apdplat-word.version>
+
+		<org-redisson.version>3.8.2</org-redisson.version>
+		<redis-clients-jedis.version>3.1.0</redis-clients-jedis.version>
+
+		<org-projectlombok-lombok.version>1.18.8</org-projectlombok-lombok.version>
+		<com-belerweb-pinyin4j.version>2.5.1</com-belerweb-pinyin4j.version>
+		<org-slf4j-slf4j-api.version>1.7.28</org-slf4j-slf4j-api.version>
+
+		<cn-jpush-api.version>3.3.6</cn-jpush-api.version>
+
+	</properties>
+  
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
+	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Greenwich.SR2</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${org-projectlombok-lombok.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.belerweb</groupId>
+				<artifactId>pinyin4j</artifactId>
+				<version>${com-belerweb-pinyin4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.javassist</groupId>
+				<artifactId>javassist</artifactId>
+				<version>${org.javassist.javassist.version}</version>
+			</dependency>
+
+			<!-- 分词工具 -->
+			<dependency>
+				<groupId>org.apdplat</groupId>
+				<artifactId>word</artifactId>
+				<version>${org-apdplat-word.version}</version>
+			</dependency>
+
+			<!-- Redisson -->
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson</artifactId>
+				<version>${org-redisson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-boot-starter</artifactId>
+				<version>${org-redisson.version}</version>
+			</dependency>
+
+			<!--poi操作Excel -->
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${org.apache.poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${org.apache.poi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${org-slf4j-slf4j-api.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
+			<dependency>
+				<groupId>com.sun.xml.bind</groupId>
+				<artifactId>jaxb-impl</artifactId>
+				<version>${com.sun.xml.bind.jaxb-impl.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${redis-clients-jedis.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet-api.verdion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+			<dependency>
+				<groupId>net.sf.json-lib</groupId>
+				<artifactId>json-lib</artifactId>
+				<version>${net.sf.json-lib.version}</version>
+			</dependency>
+
+			<!-- mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${mybatis-spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper-spring-boot-starter</artifactId>
+				<version>${mapper-spring-boot.version}</version>
+			</dependency>
+
+			<!-- pagehelper -->
+			<dependency>
+				<groupId>com.github.pagehelper</groupId>
+				<artifactId>pagehelper-spring-boot-starter</artifactId>
+				<version>${pagehelper-spring-boot.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-core</artifactId>
+				<version>${mybatis-generator-core.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${io-springfox-swagger.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${io-springfox-swagger.version}</version>
+			</dependency>
+
+			<!-- google 二维码 -->
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>core</artifactId>
+				<version>${google.zxing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.zxing</groupId>
+				<artifactId>javase</artifactId>
+				<version>${google.zxing.version}</version>
+			</dependency>
+
+			<!--阿里 FastJson依赖 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>${commons-beanutils.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>${commons-fileupload.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons-io.version}</version>
+			</dependency>
+
+			<!-- swagger guava use 20.0 -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${com-google-guava.version}</version>
+			</dependency>
+
+			<!-- 验证码 -->
+			<dependency>
+				<groupId>com.github.axet</groupId>
+				<artifactId>kaptcha</artifactId>
+				<version>${github-axet-kaptcha.version}</version>
+			</dependency>
+
+			<!-- apache.shiro -->
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-core</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<!-- jwt -->
+			<dependency>
+				<groupId>com.auth0</groupId>
+				<artifactId>java-jwt</artifactId>
+				<version>${com-auth0-jwt.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>cn.jpush.api</groupId>
+				<artifactId>jpush-client</artifactId>
+				<version>${cn-jpush-api.version}</version>
+			</dependency>
+			
+			<!-- project model -->
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-redis</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-shiro</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-oauth</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-datasource</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-erp-ujiu</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-app-feign</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.meixin.parent</groupId>
+				<artifactId>meixin-base-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- 设定主仓库，按设定顺序进行查找。 -->
+	<repositories>
+		<repository>
+			<id>repos</id>
+			<name>Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>repos1</id>
+			<name>Repository1</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
+	<!-- 设定插件仓库 -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repos</id>
+			<name>Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>repos1</id>
+			<name>Repository1</name>
+			<url>http://repo1.maven.org/maven2/</url>
+		</pluginRepository>
+	</pluginRepositories>
+</project>

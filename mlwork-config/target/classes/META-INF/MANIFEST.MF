@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: mlwork :: parent :: config
+Implementation-Version: 1.0.0
+Built-By: miaolong
+Implementation-Vendor-Id: com.mlwork.parent
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/mlwork-parent/mlwork-config
+Created-By: Maven Integration for Eclipse
+

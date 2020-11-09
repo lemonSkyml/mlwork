@@ -1,0 +1,15 @@
+sendsms: 
+  srcid: 106900028          # 下发端口号
+  serviceid: AA88888888     # 业务代码
+  spid: h11016              # 企业代码
+  host: 47.94.193.152       # IP
+  port: 7890                # 端口
+  source-addr: h11016       # 账号
+  shared-secret: mb2c*aq    # 密码
+  heartbeat-interval: 30
+  reconnect-interval: 10
+  heartbeat-noresponseout: 5
+  transaction-timeout: 10
+  version: 32
+  debug: false
+  smsUrl: http://11.222.1.92:9080/sms/paas/sms/sendMsg/send.do

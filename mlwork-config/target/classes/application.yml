@@ -1,0 +1,25 @@
+server:
+  port: 11000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10100/eureka/
+  instance:
+    prefer-ip-address: true
+      #ip:port or name
+      #instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+
+spring:
+  application:
+    name: meixin-config-server
+  #git svn native or other that can be attached
+  profiles:
+    active:
+     - native
+  cloud:
+    config:
+      enabled: true
+      server:
+        native:
+          search-locations: classpath:/config-dev,classpath:/config-test,classpath:/config-beta,classpath:/config-prod

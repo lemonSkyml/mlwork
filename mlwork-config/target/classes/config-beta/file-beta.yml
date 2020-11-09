@@ -1,0 +1,16 @@
+spring: 
+  servlet: 
+    multipart: 
+      max-file-size: 50MB #最大文件大小。值可以使用后缀“MB”或“KB”分别表示兆字节或千字节。
+      max-request-size: 50MB #最大请求大小。值可以使用后缀“MB”或“KB”分别表示兆字节或千字节。
+      enabled: true
+file: 
+  filepath: /data/apps/zhongtongfu/datafile #文件上传路径
+  templatePath: ./tmp #模板临时路径
+  config: 
+    ctxPathImage: https://domch.cn/file-api #图片域路径
+    ctxPathLink: https://domch.cn/file-api #链接域路径
+ueditor: 
+  unified: true
+  upload-path: /data/apps/zhongtongfu/datafile
+  url-prefix: https://domch.cn/file-api/image

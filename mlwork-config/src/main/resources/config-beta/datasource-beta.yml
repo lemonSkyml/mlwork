@@ -1,0 +1,21 @@
+spring: 
+  datasource:
+    database: 
+      one:
+        url: jdbc:mysql://116.62.118.104:3306/mxmalldb?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false&allowMultiQueries=true&pinGlobalTxToPhysicalConnection=true
+        username: mxdb
+        password: mxmallDB201709
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      two: 
+        url: jdbc:mysql://116.62.118.104:3306/mxmalldb?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false&allowMultiQueries=true&pinGlobalTxToPhysicalConnection=true
+        username: mxdb
+        password: mxmallDB201709
+        driver-class-name: com.mysql.cj.jdbc.Driver
+  #jta相关参数配置
+  jta:
+    log-dir: tx-logs
+    transaction-manager-id: txManager
+    atomikos: 
+      properties: 
+        max-timeout: 300000ms # 300000ms Maximum timeout that can be allowed for transactions.
+        default-jta-timeout: 30000ms # 10000ms Default timeout for JTA transactions.

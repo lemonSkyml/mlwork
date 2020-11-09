@@ -1,0 +1,37 @@
+spring: 
+  # redis 配置
+  redis:
+    mode: single #sentinel/cluster/single 配置布署环境 redis 模式
+    database: 0
+    password:  # 密码（默认为空）
+    timeout: 6000 # 连接超时时长（毫秒）
+    
+    #连接池配置
+    pool: 
+      max-active: 1000  # 连接池最大连接数（使用负值表示没有限制）
+      max-wait: -1    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-idle: 10    # 连接池中的最大空闲连接
+      min-idle: 5     # 连接池中的最小空闲连接
+      conn-timeout: 3000
+      so-timeout: 3000
+      size: 10
+    #单机配置
+    single:
+      address: 127.0.0.1:6379
+    #主从集群配置
+    cluster: 
+      scan-interval: 1000
+      nodes: 127.0.0.1:6581,127.0.0.1:6582,127.0.0.1:6583,127.0.0.1:6584,127.0.0.1:6585,127.0.0.1:6586
+      read-mode: MASTER_SLAVE
+      slaveFailsInterval: 180000 #Redis Slave node failing to execute commands is excluded from the internal list of available nodes, Default is 180000
+      slave-connection-pool-size: 64
+      master-connection-pool-size: 64
+      retry-interval: 1500
+    #哨兵配置
+    sentinel: 
+      master: mymaster
+      nodes: 39.104.183.242:26481,39.104.183.242:26482
+      master-onlyWrite: true
+      slaveFailsInterval: 180000 #Redis Slave node failing to execute commands is excluded from the internal list of available nodes, Default is 180000
+      slave-connection-pool-size: 64
+      master-connection-pool-size: 64

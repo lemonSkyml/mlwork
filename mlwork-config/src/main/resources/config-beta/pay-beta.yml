@@ -1,0 +1,28 @@
+weixin: 
+    mpAppId: wx100e35b1b4b9f264                       # 公众号开发开发者ID
+    mpAppSecret: d10d843766d5c5917f2e697fd294e8ae
+    #mpAppId: wx88da1f6f64877987                       # sw测试公众号开发开发者ID
+    #mpAppSecret: 2193e49e346d2b9ba3c27b248974c449     # sw测试公众号开发开发者Secret
+    payKey: SZMedL5YtRls2yCTKD27fWuNBF5ob9oQ          # 微信支付Key
+    mchId: 1520103501                                 # 微信支付商户号    
+    openAppId: wxaa21a2a045f3852f                     # 开放平台开发开发者ID
+    openAppSecret: bbe446d1471d379a84e21147e5b0427d   #
+    notifyUrl: https://domch.cn/mall/api/mall/pay/wx/payNotify  # 支付异步回调地址
+    refundNotifyUrl: https://domch.cn/mall/api/mall/pay/wx/wxRefundNotify  # 退款异步回调地址
+    keyStoreFilePath: /data/certs/zhongtongfu/weixin/apiclient_cert.p12
+    wxUrlPrefix: http://zhongtongfu-wx-test.uworks.cc
+    # keyStoreFilePath: /usr/local/attachment/apiclient_cert.p12  # 八戒服务器证书路径
+alipay: 
+    # alipayAppId: 2016030101174813     
+    # alipayReturnUrl: 1
+    # appPrivateKey: MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCfX4otYKcA6AHV1qMDDry1MOalKNUjXOAJIyagdAQ4zH549iEfagzWjMxRDw+SSlIWgToilwoJDnc8YlUfThGUQggGMXpER5AwpiAsm4kiy7cWcFyRmefjiNAwuZJHo2LuA4zytccY0BTvwiCLU+4z4fXKiigPLOm7PCrQ5Gvk2mLjHSFOIz9JQBfiYT+0EqNZ+ZabPLfm1rhbl4Y1cxQAdWccU0o6cKzNNrFi60HniYDyrrKfyxICQOOg+OsT0vAfc38BuAmPaq/uDw8dCLd7rCwoYCFYaOofqqm6LUXRZ1NJa0hZvTERML86lFTH6BGIEKFZH2eUxIZn4k5hkmaDAgMBAAECggEAF7tjWRR+ad0igNRAW/Ey2oxYnBlze5uV5OZuFxCPnGGfJ6YHEqV5Ge3Hcv6aI/+bL6y4mnQBU43q5XwDDvFSHtCiX0G44jgB2ayzN9FFX4AUWGwM7MWNSU2TKt5HURGcZrLypyW4axJ5O6adsAGkg+dO8YUXKANZHr975LVO97ntOfUeQ1fSjzlOSvnCN5RpItwe08kDyhV+9sGRLino9qlhbI8G7fo+YdoBqvasgLZA49sXFAebDMDhsqiml5C3Jo7Rr5DNwb0+4ygvO70qrnDX5Maas/T1qfCRnx+n3Y/CDl+tKssnKO4z7BphiDcSs+/h+X/I5eptsyeF8QbwAQKBgQDOerCmNlhrUWTBOSO8kgeqkMK63Vl1VhLJ97nqR4A+/1ACUQnv30svCI6N9hvpLBLvPg06JqUy4qOwwgHm01/Jw//2P3W2PqjYv/cU70B/y2/QVTbu8MoeIvEQnbJMdhuyWPENWIQjOGgSPvVn/KczK7b6MpDFBOkkv9Id+VMIAQKBgQDFmKfdX3TXZ0S51m/ffNed26zOeIH52OV7HoUhK3ynFUiK6Ttbvwi7OkxJLIg4CW6ABbBR2zZRK/Hqt96qowxul/GMG0CIgAcNBjFOrLxFVubBF1NJeXDZFGgUdo3wsb2J9N2BUirCPlG3cQc1IHCPlc9BEjURX+VcGzDEV6VOgwKBgA3P50E3IXMMXtEOIXXbzud6B4y4geN3fopEKAuj/NA6BAAjq6aAKWdcCy0z6WoPqLSYUgoxy5s7zfdlAvuN6Dp3AghW9mjaiDD3pm+gEZB661/kU2hocxzQ+Y9C/UpgHDox+O4Lncs9WrjdvUzXedfSdMsH1udXDMGIk2Wt6AABAoGAaTycarJkMDS3zaH/gy+iRliw+GYGE2MJFUFz9e6LPRGAyTreekaMB+tMpcwp4G5lg5mEBpSRoTmeZjv3QzoDbQNPiicZf5lwJ+ecayJkQym9TCl4GjGrgHH13LAneIGxSMA5GJ8CVuGJ9AEmrYzRZieLckSYLuC77wosNuXXDLECgYAwcAlIsM1N7G+YCjt9x4a1YqN8tTS94JbcnN3nk53uyIXuD0IknfQmMbUcwm1V1TOUWmgqW7xrIlJ6V3MHc9/YmErj1y48/B0TaVhwb4uggQCNkXaGiWOQH1Dn5dxHEfBKcfkQg6IQf/OUtcLX4ao5WOpDeL930WYzdJ7/0nrLiw==
+    # alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiDE29OAmwhgen4FRL3sYOeg0RjzRUfwqjVfHBcHBEaXCWDN6QITFHju0h6tHQN0pUYnyFkpekYphj2bJA7QwWVuqJ9xEku/8815gjpk6dcVdFgTsstS4/1RvBH0zndlF/6UqTqVP0cG7N7nEDuB+8ZvLE5WYDm2KhATrNNWk5SBWnxSQ8QaCf7VwAug2aIOmmrwiey1PVK9i6sF+illraSncmaoGizyEfM1017WIvbCI8Tg92HNhuWV0CnM6hN1NoEh0xpRg+FsZGZ1PE0u2KKKiw5lxfBnfKwnhBcegVBAOzf9Bwon0mhM8FgIQc0acX/bmDOccm2dku3AeqN0GMwIDAQAB
+    # sellerId: 2088021343428290
+    # sellerEmail: admin@uworks.cc
+    alipayAppId: 2018112162233838
+    alipayReturnUrl: 1
+    appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDREP8hXrphPrFV84igd4+tveVU8zttkZfqlQ0u0o3LiCOKJSOXZ4yKA1ZNruamE/PwZzZUqFB/p/0uaDAZk9okVaBgaKJUaoUmAiRXQxZcsFgzPLvlt7fZkW6NBya/3AZFV1yGGpOLLn7KnvSWVAl8BPVC+dIgtp08Lz3WDoeptWessRmFcEegjWbMyuXan8r6oR/2LhUeH8p5GrvtAq6qmOremCWCa2YVTrIKEhScr8taVAWRI4/olFVFbRJaFrwEvphAWzzKV2Vt9W0BKR5AIC9C4ruRC9CJWtGdNszkyXDvM8BbbuzDDhXGh7Uf6vJGPdGUt6XAgurIaME+BKS9AgMBAAECggEARQRKZTbDaoTqwAgka2zs5ptQ0Ol3DeXJc+x+rJ1fp/gqW1mFVV8euxT88aoyhFMD7bH08p+Z63qGj0Jf1qHDmskVp54DMMD1caW1X4VLJZAlncyH7v7mV5G2ICJjPWUiQNPlPHQbjw/rVXKCJfpaIzHz0YdtQdVnNM4XqMmlKXWbHjunouQnz90XS+48xoX9tgN1LXJOqe9VUHezgTRZglUIbepKvcjAYeOQvOjoFhyYmnGKtLm9C3vyxdDJDl/m/xIHXk5adNeLDLBzcDU5RsR7CQL/6Jtwg+E+yBA/VXq0UBG8ENM9k4aqk0zVjCW8BzzcmK9cTU7o14uV9BYTlQKBgQD7TjsgVHp8RvZlCyn4iWz0XBVo9zbFGE5gz6Rw3OLLELOzNfjxf0jn7aBhHA/nveE75CSYR0BPSuHE42lE0Z6Fxo6wKpCMqcxSVgDqIQjNT6HoK8soY6VtAYNTW2t6YYSx++nwLvalhqwV6Qgs8L0t9ZiOBxd4Y5zefap8qqVQKwKBgQDU+MYC3Snfm3aqj6QdDZPdEW1fouz+QYymbNTNF+mFc8mpdEP9NtZ0O0zUw4iMFnKoy4JNHMa5/jR1ySphAHoi34aBOD1uqpthnMtwQUC7YuT82J15dS9IVdn+b8+pA0wz9F1S2+jKW0Zqkp27E60huPa41Q9hgGfu/Sa7kagCtwKBgQCZ1MCCwNOdgX7QSW4uskjcqAV/FF0VdxR7VH+virbVYOrvV6mEgsrpFd+nshrWW7glBjmUcYEfSJI9CIvm0X39G5c6pUOIp2PoPrcemowdyZItYalhluWrfVKbUwnOhyVIIhGIsebPWkm6u8QCZncXTBBPWG34htl+pGQZHghFswKBgFla+3FuK8h26OYNGHVcIgLp8fLjX/4ZsJKPLQXUF5V3jE/9yRzvqjDgRI8sbxkfvgHWSRhjj3mwD4Cv44kJczU4ha2n1BafnEvrRmwV5Lv6dUsk84VnRmxaIPmhHgayrIFL8O/39ocYnsXOOEGqssRoX5QTSL3G61SZgGvIZC6nAoGBAN7yMc2emXpR7W8xxtviceMZWEd3BIGybvwzMVcKQPlB0MLOLt6PFzD4G2k78faVwG4ALlnvr578IMwJiw7a8EXBdAMjA/0Xxt+wqygaDwutQd3qRRDrILKwX9dd8m7gZsIoYVAO5CXcwTT6s4Bf+kWuzMdIZSfq3Bqtr8NgHWOH
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArjBixBEFnUG/kiLioufCOGtE2/nAXmOUF8oSHK/7IFrm8+SprjG1HvLVGVilO/o6swJBAgRaaXRsPcrpto0IvNlL98rGFtNryaL8AKq7OVXmYxzE0P2yZfXuLCN5bRqJUsyKVWVX9DJd5+a9/L63NAMCzNpI/GNvb+GM8v4bJbW+NVX3JYhDgr2JhmdLcXY6fzld96qWLrcTXL2dSdPcRMyL8sWq4MSJMkOBVkbHK+QA1XYp/PEAkUw/SLWUnO5hOfMbpXGreCvWqTJn/poxGBidj5yjGZEtNS4U+NpjJIXUDaBgBlV5xvafRrlsdvhVm0Fdwu74IGAqlj/Lt90WXQIDAQAB
+    sellerId: 2088921041420568
+    sellerEmail: wlzfzy@ccswy.com
+    alipayNotifyUrl: https://domch.cn/mall/api/mall/pay/alipay/payNotify

@@ -1,0 +1,17 @@
+spring: 
+  servlet: 
+    multipart: 
+      max-file-size: 50MB #最大文件大小。值可以使用后缀“MB”或“KB”分别表示兆字节或千字节。
+      max-request-size: 50MB #最大请求大小。值可以使用后缀“MB”或“KB”分别表示兆字节或千字节。
+      enabled: true
+file:
+  filepath: ./datafile # local
+  templatePath: ./tmp #模板临时路径
+  # config
+  config:
+    ctxPathImage: http://127.0.0.1:13000/file-api #图片域路径
+    ctxPathLink: http://127.0.0.1:13000/file-api  #链接域路径
+ueditor: 
+  unified: true
+  upload-path: ./datafile
+  url-prefix: http://127.0.0.1:13000/file-api/image

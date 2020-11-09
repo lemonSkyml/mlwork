@@ -1,0 +1,19 @@
+weixin: 
+    mpAppId: wx100e35b1b4b9f264                       # 公众号开发开发者ID
+    mpAppSecret: d10d843766d5c5917f2e697fd294e8ae
+    payKey: SZMedL5YtRls2yCTKD27fWuNBF5ob9oQ          # 微信支付Key
+    mchId: 1520103501                                 # 微信支付商户号    
+    openAppId: wx7c20f6103751c9a8                     # 开放平台开发开发者ID
+    openAppSecret: 1af251890b88fb31cd7c0caa5456fec4   #
+    notifyUrl: https://zhwl.ccswy.cn/mall/api/mall/pay/wx/payNotify  # 支付异步回调地址
+    refundNotifyUrl: https://zhwl.ccswy.cn/mall/api/mall/pay/wx/wxRefundNotify  # 退款异步回调地址
+    keyStoreFilePath: /home/userv/config/apiclient_cert.p12
+    wxUrlPrefix: https://zhwl.ccswy.cn
+alipay: 
+    alipayAppId: 2018122762723093      
+    alipayReturnUrl: 1
+    appPrivateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsl4iYZlTKnDTJKZg/e+TvWmuRrsgXa4UPyI3piCuYvMSw60k3DN5U5TXW/6l7JXVZkcBrLyZo8t9YZWMf5vsM05ehq//nnksG0hFq7O1UY47sCvyt40I7XuFf1YbKz2vfPv/W+Zv6b4AxAgNSsKbY29IKiL0YB1xueDVi0SPrE4emB0pu/XFRv+om8DgSPIxBb11Pr7pVpngZ0P4wZxFdeY3+Iy+//77sz7ZjuF4wlJg1eaQRMv8SwuhHofN+pVhWzU1efqjzimgV8S57upPa7Xat9IbGByd1KXhqb+9wqAhBXfxJqkpYmHj8aqg1bBTWcAXi8B0d9CaeCVbYp+rHAgMBAAECggEAKvcyVxYqh6Hpdia3sx4puPhejQ7g2wu2PV6lDX0LtWNQ5+Y6/MxkUOgaxiIxU+nYU+r35vb+7eOAfGYJDjkXSHMobWP/Oe7rKJCFK4Q99OMwAk0d6EAKDfOp0Yy7mKOYbCQn1qGfFfJKDGk+4If/kT7wBBVUVbYHaazdRXNhKLTzyiJgKmZ4Lw3lJVFQOjhPjy2l76PoKvZzkzH5bYlq0BZdtwnGuQZGt8APLPfZEspTDrWl/liWfj6bROs5MetVZOzL0k+p9Ogn5fWu1/2mnOzgsofxWqKqbHfWk/Px0kkOSzurknkENzCDFcMkODUCx033RDAY0VIpX8Vi7NG+kQKBgQDnqU+QitAGBbOfX4iB94/7T8IX1xYvvh11zTwoZ0SVQkyRXHNiv7QyrcuAeZzpOJvJndvFfIj9NsJUcEK89thOeLhMvMJsVEarWf1cU1yDJY3rLxi6S4NDdcR5FJ1KIHXAZS25Ph7nImZ2gjeKHNZ142gQgDiVI34bOiQYKWI9rwKBgQC+uYKbbDmOC2pLUySHfknPWwIAXPBY8oijwA8jJn/DReJQ6vDQDGCT8zdhYNtjutVM662szwaaVQ6xALXPcBValBBwuiigaJBQElaheS83yTL07uYH+Fd33khAKIu9xaVlpyc6FU+P9Z15PSRiSLSUYmEHITt6NfJCh5y1ssLCaQKBgEkN2HxxefZcN+/LVaX+ptYOqduQxXtazbmHdjAbmMIk/TZd3DlI0Q+mROWH9FaLtn0XHeYiRqTrbs7n8/PZOA9O/HeekwVMcli48S/7TdJBtoZy/K5K/+L3MXUpbgyhPeDlR00CbQZgj8VRfSg9vdfBVeDWPoGxhqQZaqZ/7m4bAoGBALAKNLZWl203th3emSoC9AfTna5OGn5PJrXWUWKFZ4oLGBDOOgYeVopZBPX526ZazgSYyI5n7FVJSy0vVaEpeFxJrD8QZO1idkmiE5opa97W9BTF6UbT/5AheJjXk9xO8RI5zeg7wVtEPtyoBcw+BYesophdITP1VS35VDkVzdR5AoGAJI/zuH4T6UqWK9lkaxQy3nTpEpiRg0PuwwR4RmkxS8EtTPqJqKdW+faNIzDhB7Ajk4UR9KVwtHheVFpppCuK3ZWxhIOoHFtkIUVlD0CvRQjqjsskIUsm2zUtwN+1PoSS7E5OmTm99klHUheH0HMaGvo9NONG+nDOlSGZ7+/UjfM=
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArjBixBEFnUG/kiLioufCOGtE2/nAXmOUF8oSHK/7IFrm8+SprjG1HvLVGVilO/o6swJBAgRaaXRsPcrpto0IvNlL98rGFtNryaL8AKq7OVXmYxzE0P2yZfXuLCN5bRqJUsyKVWVX9DJd5+a9/L63NAMCzNpI/GNvb+GM8v4bJbW+NVX3JYhDgr2JhmdLcXY6fzld96qWLrcTXL2dSdPcRMyL8sWq4MSJMkOBVkbHK+QA1XYp/PEAkUw/SLWUnO5hOfMbpXGreCvWqTJn/poxGBidj5yjGZEtNS4U+NpjJIXUDaBgBlV5xvafRrlsdvhVm0Fdwu74IGAqlj/Lt90WXQIDAQAB
+    sellerId: 2088921041420568
+    sellerEmail: wlzfzy@ccswy.com
+    alipayNotifyUrl: https://zhwl.ccswy.cn/mall/api/mall/pay/alipay/payNotify
